@@ -12,6 +12,7 @@ $background-main-color: rgb(240, 80, 80);
 $yellow-brand: #fbb800;
 $light-orange: #ffa908;
 $yellow-brand-light: #face54;
+$yellow-brand-lighter: #fdd975;
 $celeste-conejo: #2eb3e7;
 
 .navbar {
@@ -33,11 +34,11 @@ $celeste-conejo: #2eb3e7;
 }
 
 main {
+    margin-top: 74px;
     .index-container {
         padding: 0;
 
         .main-banner {
-            margin-top: 74px;
             width: 100%;
             height: 70vh;
             object-fit: cover;
@@ -168,6 +169,18 @@ main {
         }
     }
 
+    .snacks-container {
+        background-color: $yellow-brand-lighter;
+
+        .cards-container {
+
+            .card {
+                width: 280px;
+                border: none;
+                margin: 20px;
+            }
+        }
+    }
 }
 
 footer {
@@ -215,6 +228,12 @@ footer {
         .productos-container {
             .categoria-box {
                 width: 90vw;
+            }
+        }
+
+        .snacks-container {
+            .cards-container {
+                justify-content: center;
             }
         }
     }
