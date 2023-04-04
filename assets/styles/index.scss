@@ -14,6 +14,8 @@ $light-orange: #ffa908;
 $yellow-brand-light: #face54;
 $yellow-brand-lighter: #fdd975;
 $celeste-conejo: #2eb3e7;
+$card-shadow: .1rem .1rem .5rem rgb(31, 31, 31);
+$card-shadow2: .1rem .1rem .7rem rgb(31, 31, 31);
 
 .navbar {
     background-color: $background-main-color;
@@ -34,8 +36,8 @@ $celeste-conejo: #2eb3e7;
 }
 
 main {
-    margin-top: 74px;
     .index-container {
+        margin-top: 74px;
         padding: 0;
 
         .main-banner {
@@ -134,9 +136,6 @@ main {
                             }
                         }
                     }
-                    .carousel-control-prev-icon, .carousel-control-next-icon {
-                        text-shadow: 1px 1px 5px black;
-                    }
                 }
 
                 .box-description {
@@ -181,6 +180,32 @@ main {
             }
         }
     }
+
+    .ropa-container {
+        .ropa-items {
+            .item-container {
+                width: 300px;
+                margin: 20px;
+
+                .carouselRopa {
+                    .carousel-inner {
+                        width: 100%;
+                        box-shadow: $card-shadow;
+                        border-radius: 4px;
+
+                        .carousel-img {
+                            width: 100%;
+                        }
+                    }
+
+                    .carousel-control-prev-icon, .carousel-control-next-icon {
+                        background-color: rgba(0, 0, 0, 0.603);
+                        border-radius: 100%;
+                    }
+                }
+            }
+        }
+    }
 }
 
 footer {
@@ -204,7 +229,7 @@ footer {
 @media (max-width: 768px) {
     main {
         .index-container {
-    
+            margin-top: 0;
             .main-banner{
                 display: none;
             }

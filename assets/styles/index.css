@@ -22,10 +22,8 @@ body {
   font-weight: 400;
 }
 
-main {
-  margin-top: 74px;
-}
 main .index-container {
+  margin-top: 74px;
   padding: 0;
 }
 main .index-container .main-banner {
@@ -106,9 +104,6 @@ main .productos-container .categoria-box .content-box .carouselProductos .carous
 main .productos-container .categoria-box .content-box .carouselProductos .carousel-inner .carousel-item .carousel-caption h5, main .productos-container .categoria-box .content-box .carouselProductos .carousel-inner .carousel-item .carousel-caption p {
   text-shadow: 1px 1px 5px black;
 }
-main .productos-container .categoria-box .content-box .carouselProductos .carousel-control-prev-icon, main .productos-container .categoria-box .content-box .carouselProductos .carousel-control-next-icon {
-  text-shadow: 1px 1px 5px black;
-}
 main .productos-container .categoria-box .content-box .box-description {
   width: 400px;
   min-width: 200px;
@@ -140,6 +135,22 @@ main .snacks-container .cards-container .card {
   border: none;
   margin: 20px;
 }
+main .ropa-container .ropa-items .item-container {
+  width: 300px;
+  margin: 20px;
+}
+main .ropa-container .ropa-items .item-container .carouselRopa .carousel-inner {
+  width: 100%;
+  box-shadow: 0.1rem 0.1rem 0.5rem rgb(31, 31, 31);
+  border-radius: 4px;
+}
+main .ropa-container .ropa-items .item-container .carouselRopa .carousel-inner .carousel-img {
+  width: 100%;
+}
+main .ropa-container .ropa-items .item-container .carouselRopa .carousel-control-prev-icon, main .ropa-container .ropa-items .item-container .carouselRopa .carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.603);
+  border-radius: 100%;
+}
 
 footer {
   height: 400px;
@@ -151,6 +162,9 @@ footer {
   }
 }
 @media (max-width: 768px) {
+  main .index-container {
+    margin-top: 0;
+  }
   main .index-container .main-banner {
     display: none;
   }
