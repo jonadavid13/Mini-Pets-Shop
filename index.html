@@ -9,12 +9,273 @@
     <link rel="stylesheet" href="./assets/styles/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="./images/minipets-icon-rounded.jpg" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./images/brand/icon-rounded.png" type="image/x-icon">
 </head>
 <body>
-    <nav></nav>
-    <main></main>
+    <nav class="navbar navbar-expand-sm fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="./images/brand/icon-rounded.png" alt="miniPets Logo" class="brand-logo">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="#index">Inicio</a>
+              <a class="nav-link" href="#productos">Productos</a>
+              <a class="nav-link" href="#snacks">Snacks</a>
+              <a class="nav-link" href="#ropa">Ropa</a>
+              <a class="nav-link" href="#limpieza">Limpieza</a>
+              <a class="nav-link" href="#informacion">Información</a>
+            </div>
+          </div>
+        </div>
+    </nav>
+    <main>
+        <section id="index" class="index-container container-fluid d-flex flex-column justify-content-center">
+            <img src="./images/fb-banner.jpg" alt="" class="main-banner">
+            <img src="./images/fb-banner-md.jpg" alt="" class="main-banner-mobile">
+            <div class="index-content container-fluid d-flex flex-column align-items-center pt-3 pb-5">
+                <div class="index-brand-container pt-3 pb-4">
+                    <img src="./images/brand/logo-white-recortado.jpg" alt="" class="index-brand-logo">
+                </div>
+                <h4 class="fw-semibold index-title">Somos una tienda virtual para los favoritos de la casa 🐾</h4>
+                <span class="index-text lead">Vendemos productos importados para mascotas. Encuentra juguetes, snacks, ropa y mucho más en nuestra tienda.</span>
+                <div class="galeria d-flex">
+                    <img src="./images/galeria/galeria-1.webp" class="img-galeria" alt="Perro feliz">
+                    <img src="./images/galeria/galeria2.jpg" class="img-galeria" alt="Perro comiendo">
+                    <img src="./images/galeria/galeria-3.webp" class="img-galeria" alt="Tienda de accesorios">
+                    <img src="./images/galeria/galeria4.jpg" class="img-galeria" alt="Gatito">
+                    <img src="./images/galeria/galeria5.webp" class="img-galeria" alt="Juguete de mascota">
+                </div>
+            </div>
+        </section>
+        <section id="productos" class="productos-container container-fluid d-flex flex-column justify-content-center">
+            <div class="section-header container-fluid d-flex flex-column align-items-center text-center pb-4">
+                <h1 class="fw-semibold section-title py-4">Productos</h1>
+                <span class="index-text lead">Vendemos productos importados para mascotas. Encuentra juguetes, snacks, ropa y mucho más en nuestra tienda.</span>
+            </div>
+
+            <div class="categoria-box perros-box container-md d-flex flex-column py-3 mb-3 mt-4 rounded-4 align-items-center">
+                <h3 class="section-title py-3 fw-bold">Productos para Perros</h3>
+                <img class="box-image rounded-1" src="./images/perro.webp" alt="Perrito">
+                <div class="border-bottom border-2 my-4"></div>
+
+                <div class="content-box d-flex flex-wrap">
+                    <div id="carouselPerros" class="carouselProductos carousel slide mb-4" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselPerros" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselPerros" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselPerros" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                          <button type="button" data-bs-target="#carouselPerros" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                          <button type="button" data-bs-target="#carouselPerros" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                          <button type="button" data-bs-target="#carouselPerros" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="./images/carousel-productos/productos-perro1.webp" class="d-block carousel-img" alt="...">
+                            <div class="carousel-caption">
+                              <h5 class="fw-bold">Accesorios</h5>
+                              <p class="d-none d-sm-block">Tenemos variedad de accesorios para tu peludito.</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./images/carousel-productos/bolso-perro.webp" class="d-block carousel-img" alt="...">
+                            <div class="carousel-caption">
+                              <h5 class="fw-bold">Bolsos</h5>
+                              <p class="d-none d-sm-block">Excelentes para llevar a tu peludo a todas partes.</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./images/carousel-productos/juguete-perro.webp" class="d-block carousel-img" alt="...">
+                            <div class="carousel-caption">
+                              <h5 class="fw-bold">Juguetes</h5>
+                              <p class="d-none d-sm-block">Ideales para que tus peludos se entretengan en todo momento. </p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./images/carousel-productos/correas-perro.webp" class="d-block carousel-img" alt="...">
+                            <div class="carousel-caption">
+                              <h5 class="fw-bold">Correas</h5>
+                              <p class="d-none d-sm-block">Un paseo de calidad es lo más importante.</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./images/carousel-productos/comederos-perro.webp" class="d-block carousel-img" alt="...">
+                            <div class="carousel-caption">
+                              <h5 class="fw-bold">Comederos</h5>
+                              <p class="d-none d-sm-block">Alimentarse ahora será súper divertido y cute.</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./images/carousel-productos/camas-perro.webp" class="d-block carousel-img" alt="...">
+                            <div class="carousel-caption">
+                              <h5 class="fw-bold">Camas</h5>
+                            <p class="d-none d-sm-block">Los sueños más hermosos los tendrá tu mascota en estas cómodas camitas.</p>
+                        </div>
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselPerros" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Anterior</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselPerros" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Siguiente</span>
+                        </button>
+                    </div>
+                    <div class="box-description text-wrap">
+                        <p class="mb-3">Si disfrutas de compartir diariamente con tu perrito, entonces sabrás lo valiosa que es su compañía.
+                        <br><br>
+                        Los peludos son el mejor amigo de toda persona, siempre dispuestos a llenarnos de atención y recibirnos con esa emoción que nos llena el corazón de alegría.
+                        <br><br>
+                        Tu peludito se merece lo mejor y por esa razón, en MiniPets encuentras productos de excelente calidad para consentirlo. </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="categoria-box gatos-box container-md d-flex flex-column py-3 my-3 rounded-4 align-items-center">
+                <h3 class="section-title py-3 fw-bold">Productos para Gatos</h3>
+                <img class="box-image rounded-1" src="./images/galeria/galeria4.jpg" alt="Gatito">
+                <div class="border-bottom border-2 my-4"></div>
+
+                <div class="content-box d-flex flex-wrap">
+                    <div id="carouselGatos" class="carouselProductos carousel slide mb-4" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselGatos" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselGatos" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselGatos" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                          <button type="button" data-bs-target="#carouselGatos" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                          <button type="button" data-bs-target="#carouselGatos" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                          <button type="button" data-bs-target="#carouselGatos" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="./images/carousel-productos/gatos-accesorios.webp" class="d-block carousel-img" alt="...">
+                            <div class="carousel-caption">
+                              <h5 class="fw-bold">Accesorios</h5>
+                              <p class="d-none d-sm-block">Perfectos para el minino de la casa.</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./images/carousel-productos/gatos-morral.webp" class="d-block carousel-img" alt="...">
+                            <div class="carousel-caption">
+                              <h5 class="fw-bold">Morrales</h5>
+                              <p class="d-none d-sm-block">Cómodos y espaciosos para llevar a tu gatito a una nueva aventura.</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./images/carousel-productos/gatos-juguete.webp" class="d-block carousel-img" alt="...">
+                            <div class="carousel-caption">
+                              <h5 class="fw-bold">Juguetes</h5>
+                              <p class="d-none d-sm-block">¡Pasa momentos divertidos con tu minino!</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./images/carousel-productos/gatos-collar.webp" class="d-block carousel-img" alt="...">
+                            <div class="carousel-caption">
+                              <h5 class="fw-bold">Collares</h5>
+                              <p class="d-none d-sm-block">Para lucir con estilo.</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./images/carousel-productos/gatos-comedero.webp" class="d-block carousel-img" alt="...">
+                            <div class="carousel-caption">
+                              <h5 class="fw-bold">Comederos</h5>
+                              <p class="d-none d-sm-block">¡Un espacio para comer diseñado especialmente para tu gatito!</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./images/carousel-productos/gatos-arena.jpg" class="d-block carousel-img" alt="...">
+                            <div class="carousel-caption">
+                              <h5 class="fw-bold">Arena para gatos</h5>
+                            <p class="d-none d-sm-block">Solo lo mejor para que tu gatito se sienta cómodo en su espacio íntimo.</p>
+                        </div>
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselGatos" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Anterior</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselGatos" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Siguiente</span>
+                        </button>
+                    </div>
+                    <div class="box-description text-wrap">
+                        <p class="mb-3">Los gatitos, sin duda alguna, son únicos.
+                            <br><br>
+                            Un maullido es un masaje al corazón y cada ronroneo es una muestra de que fueron creados con el pincel de la perfección.
+                            <br><br>
+                            Consiente a tu gatito con los juguetes y accesiorios que tenemos para él.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="categoria-box conejos-box container-md d-flex flex-column py-3 my-3 rounded-4 align-items-center">
+                <h3 class="section-title py-3 fw-bold">Productos para Conejos</h3>
+                <img class="box-image rounded-1" src="./images/conejo.jpg" alt="Conejito">
+                <div class="border-bottom border-2 my-4"></div>
+
+                <div class="content-box d-flex flex-wrap">
+                    <div id="carouselConejos" class="carouselProductos carousel slide mb-4" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselConejos" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselConejos" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselConejos" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                          <button type="button" data-bs-target="#carouselConejos" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="./images/carousel-productos/conejo-stix.jpg" class="d-block carousel-img" alt="...">
+                            <div class="carousel-caption">
+                              <h5 class="fw-bold">Stix y Heno</h5>
+                              <p class="d-none d-sm-block">Deliciosos bastones con heno diseñado para satisfacer sus necesidades instintivas.</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./images/carousel-productos/conejos-tunel.webp" class="d-block carousel-img" alt="...">
+                            <div class="carousel-caption">
+                              <h5 class="fw-bold">Túnel para conejos/hámster</h5>
+                              <p class="d-none d-sm-block">Divertido tunel que ayuda a promover el ejercicio sano.</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./images/carousel-productos/conejos-palitos.webp" class="d-block carousel-img" alt="...">
+                            <div class="carousel-caption">
+                              <h5 class="fw-bold">Palitos de madera</h5>
+                              <p class="d-none d-sm-block">Palitos masticables de madera de pino natural para hámsters, conejos y cobayos.</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./images/carousel-productos/conejos-bebedero.webp" class="d-block carousel-img" alt="...">
+                            <div class="carousel-caption">
+                              <h5 class="fw-bold">Bebederos</h5>
+                              <p class="d-none d-sm-block">Primordial para que tu conejito tenga energía y se mantenga saludable. </p>
+                            </div>
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselConejos" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Anterior</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselConejos" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Siguiente</span>
+                        </button>
+                    </div>
+                    <div class="box-description text-wrap">
+                        <p class="mb-3">Los conejos pueden resultar maravillosas mascotas para una familia. Son adorables, cariñosos, les encantan los mismos y acercarse a las personas que los quieren y los cuidan.
+                        <br><br>    
+                        Además, son fáciles de entrenar y muy limpios. Sin embargo, estos animales tienen necesidades y cuidados diferentes a las clásicas mascotas que son importante tomar en cuenta y, queremos ayudarte con eso.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
     <footer></footer>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
