@@ -9,7 +9,7 @@ body {
 }
 
 .navbar {
-  background-color: rgb(240, 80, 80);
+  background-color: #ec4f4f;
   padding-top: 2px;
   padding-bottom: 2px;
   color: white;
@@ -75,7 +75,7 @@ main .productos-container .section-header {
   background-color: rgb(250, 180, 180);
 }
 main .productos-container .categoria-box {
-  border: solid 3px rgb(240, 80, 80);
+  border: solid 3px #ec4f4f;
 }
 main .productos-container .categoria-box .box-image {
   width: 250px;
@@ -113,7 +113,7 @@ main .productos-container .categoria-box .content-box .box-description .text-wra
   width: 100%;
 }
 main .productos-container .perros-box .section-title {
-  color: rgb(240, 80, 80);
+  color: #ec4f4f;
 }
 main .productos-container .gatos-box {
   border-color: #fbb800;
@@ -239,14 +239,144 @@ main .limpieza-container .limpieza-sub-container .bottom-container .feature-cont
 main .limpieza-container .limpieza-sub-container .bottom-container .feature-container .feature-col .feat7 .feature-title h4 {
   text-shadow: 2px 2px 5px rgb(29, 29, 29);
 }
+main .informacion-container .box-description {
+  max-width: 500px;
+  min-width: 300px;
+}
+main .informacion-container .top-container .tienda-img {
+  width: 400px;
+  border-radius: 3px;
+  opacity: 0.8;
+  transition: 0.5s;
+  margin: 0 20px;
+}
+main .informacion-container .top-container .tienda-img:hover {
+  opacity: 1;
+}
+main .informacion-container .top-container .box-description {
+  max-width: 500px;
+  min-width: 300px;
+}
+main .informacion-container .top-container .box-description .description-button {
+  margin-left: 120px;
+}
+main .informacion-container .domi-container {
+  background-color: #fde49e;
+  align-items: center;
+  padding: 0 20px;
+}
+main .informacion-container .domi-container .domi-img {
+  width: 400px;
+  border-radius: 2px;
+}
+main .informacion-container .domi-container .box-description {
+  margin-right: 40px;
+}
+main .informacion-container .domi-container .box-description .description-button {
+  align-self: center;
+}
+main .informacion-container .domi-container .box-description .description-button .btn-primary {
+  border: none;
+  background-color: #0784d6;
+  color: white;
+}
+main .informacion-container .domi-container .box-description .description-button .btn-primary:hover {
+  background-color: #0c2e77;
+}
+main .informacion-container .domi-container .box-description .domi-description {
+  margin: 0;
+}
+main .informacion-container .domi-container .box-description .domi-description .ig-hashtag {
+  text-decoration: none;
+  color: #011747;
+  font-weight: bold;
+}
+main .informacion-container .webshop-container {
+  background-color: #e66767;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+main .informacion-container .webshop-container .webshop-img {
+  width: 40vw;
+  border-radius: 3px;
+  margin-right: 30px;
+}
+main .informacion-container .webshop-container .box-description {
+  color: white;
+  margin-top: 30px;
+}
+main .informacion-container .webshop-container .box-description .btn-container {
+  margin: 15px 0 0 100px;
+}
+main .informacion-container .webshop-container .box-description .btn-container .btn-primary {
+  background-color: white;
+  color: #681d1d;
+  border: none;
+  font-weight: 700;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+main .informacion-container .webshop-container .box-description .btn-container .btn-primary:hover {
+  background-color: #fdd975;
+}
+main .contacto-container .cards-container .card {
+  margin: 20px 30px;
+  border: solid 3px;
+}
+main .contacto-container .cards-container .card .card-img-top {
+  margin: 35px;
+  margin-bottom: 0;
+  width: 125px;
+}
+main .contacto-container .cards-container .wa-card {
+  border-color: #23a03e;
+}
+main .contacto-container .cards-container .ig-card {
+  border-color: #bd2a88;
+}
+main .contacto-container .cards-container .fb-card {
+  border-color: #004881;
+}
 
-footer {
-  height: 400px;
+.footer {
+  padding: 0 15px;
+  background-color: #d64444;
+  color: white;
+}
+.footer .top-footer .footer-logo-container {
+  margin-right: 30px;
+  border-radius: 3px;
+}
+.footer .top-footer .footer-logo-container img {
+  height: 50px;
+}
+.footer .top-footer .nav {
+  width: -moz-max-content;
+  width: max-content;
+}
+.footer .top-footer .nav .nav-link {
+  color: white;
+}
+.footer .bottom-footer {
+  justify-content: space-between;
+}
+.footer .bottom-footer .list-unstyled .link-body-emphasis {
+  padding: 0 5px;
+}
+.footer .bottom-footer .list-unstyled .link-body-emphasis svg {
+  width: 25px;
+  color: white;
 }
 
 @media (max-width: 820px) {
   main .index-container .index-content .galeria {
     width: 95vw;
+  }
+  main .informacion-container .domi-container {
+    align-items: start;
+  }
+  main .informacion-container .domi-container .box-description {
+    margin-right: 15px;
   }
 }
 @media (max-width: 768px) {
@@ -273,6 +403,40 @@ footer {
   main .snacks-container .cards-container {
     justify-content: center;
   }
+  main .informacion-container .top-container {
+    flex-wrap: wrap;
+  }
+  main .informacion-container .top-container .box-description {
+    margin-top: 20px;
+  }
+  main .informacion-container .top-container .box-description .description-button {
+    align-self: center;
+    margin: 0;
+  }
+  main .informacion-container .domi-container {
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+  main .informacion-container .domi-container .box-description {
+    margin: 20px 0;
+  }
+  main .informacion-container .webshop-container {
+    flex-wrap: wrap;
+  }
+  main .informacion-container .webshop-container .webshop-img {
+    width: 80vw;
+    margin: 0;
+  }
+  main .informacion-container .webshop-container .box-description {
+    text-align: center;
+  }
+  main .informacion-container .webshop-container .box-description .btn-container {
+    margin-left: 0;
+  }
+  .footer .top-footer .nav {
+    flex-direction: column;
+  }
 }
 @media (max-width: 576px) {
   main .productos-container .categoria-box .content-box .carouselProductos .carousel-inner {
@@ -290,5 +454,14 @@ footer {
   main .limpieza-container .limpieza-sub-container .top-container .box-description {
     margin: 0 15px;
     width: 100%;
+  }
+  .footer .bottom-footer {
+    text-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+  .footer .bottom-footer .list-unstyled {
+    margin: 10px 0 30px;
   }
 }/*# sourceMappingURL=index.css.map */
