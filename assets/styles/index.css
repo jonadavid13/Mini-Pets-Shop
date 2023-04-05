@@ -151,6 +151,94 @@ main .ropa-container .ropa-items .item-container .carouselRopa .carousel-control
   background-color: rgba(0, 0, 0, 0.603);
   border-radius: 100%;
 }
+main .limpieza-container {
+  background-color: #f3cdd9;
+}
+main .limpieza-container .limpieza-sub-container .top-container {
+  justify-content: center;
+}
+main .limpieza-container .limpieza-sub-container .top-container .carouselLimpieza .carousel-inner {
+  width: 350px;
+  border-radius: 3px;
+  box-shadow: 0.1rem 0.1rem 0.7rem rgb(31, 31, 31);
+}
+main .limpieza-container .limpieza-sub-container .top-container .carouselLimpieza .carousel-inner .carousel-item .carousel-img {
+  width: 100%;
+}
+main .limpieza-container .limpieza-sub-container .top-container .box-description {
+  margin: 0 30px;
+  width: 500px;
+}
+main .limpieza-container .limpieza-sub-container .bottom-container {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+main .limpieza-container .limpieza-sub-container .bottom-container .feature-container {
+  display: flex;
+  justify-content: center;
+}
+main .limpieza-container .limpieza-sub-container .bottom-container .feature-container .feature-col {
+  width: -moz-min-content;
+  width: min-content;
+}
+main .limpieza-container .limpieza-sub-container .bottom-container .feature-container .feature-col .card-cover {
+  position: relative;
+  height: 250px;
+  width: 250px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  color: white;
+}
+main .limpieza-container .limpieza-sub-container .bottom-container .feature-container .feature-col .card-cover .feature-title {
+  text-align: center;
+}
+main .limpieza-container .limpieza-sub-container .bottom-container .feature-container .feature-col .card-cover .feature-title h4 {
+  position: relative;
+  top: 0px;
+  text-shadow: 3px 3px 8px black;
+}
+main .limpieza-container .limpieza-sub-container .bottom-container .feature-container .feature-col .card-cover .feature-title .last-title {
+  position: relative;
+  top: 140px;
+}
+main .limpieza-container .limpieza-sub-container .bottom-container .feature-container .feature-col .feat1 {
+  background-image: url("/images/limpieza/cepillos.webp");
+}
+main .limpieza-container .limpieza-sub-container .bottom-container .feature-container .feature-col .feat2 {
+  background-image: url("/images/limpieza/shampoo.webp");
+  color: rgb(255, 255, 255);
+}
+main .limpieza-container .limpieza-sub-container .bottom-container .feature-container .feature-col .feat2 .feature-title h4 {
+  text-shadow: 2px 2px 10px rgb(29, 29, 29);
+  background-color: rgba(0, 0, 0, 0.397);
+  border-radius: 3px;
+}
+main .limpieza-container .limpieza-sub-container .bottom-container .feature-container .feature-col .feat3 {
+  background-image: url("/images/limpieza/arenero1.jpg");
+}
+main .limpieza-container .limpieza-sub-container .bottom-container .feature-container .feature-col .feat4 {
+  background-image: url("/images/limpieza/palas-gato.webp");
+}
+main .limpieza-container .limpieza-sub-container .bottom-container .feature-container .feature-col .feat4 .feature-title .last-title {
+  top: 130px;
+}
+main .limpieza-container .limpieza-sub-container .bottom-container .feature-container .feature-col .feat5 {
+  background-image: url("/images/limpieza/repelente.webp");
+}
+main .limpieza-container .limpieza-sub-container .bottom-container .feature-container .feature-col .feat6 {
+  background-image: url("/images/limpieza/panales-mascotas.jpg");
+}
+main .limpieza-container .limpieza-sub-container .bottom-container .feature-container .feature-col .feat7 {
+  background-image: url("/images/limpieza/bolsas-eco-friendly.webp");
+}
+main .limpieza-container .limpieza-sub-container .bottom-container .feature-container .feature-col .feat7 .feature-title .last-title {
+  top: 120px;
+}
+main .limpieza-container .limpieza-sub-container .bottom-container .feature-container .feature-col .feat7 .feature-title h4 {
+  text-shadow: 2px 2px 5px rgb(29, 29, 29);
+}
 
 footer {
   height: 400px;
@@ -195,5 +283,12 @@ footer {
   }
   main .productos-container .categoria-box .content-box .box-description {
     width: 80vw;
+  }
+  main .limpieza-container .limpieza-sub-container .top-container .carouselLimpieza .carousel-inner {
+    width: 85vw;
+  }
+  main .limpieza-container .limpieza-sub-container .top-container .box-description {
+    margin: 0 15px;
+    width: 100%;
   }
 }/*# sourceMappingURL=index.css.map */

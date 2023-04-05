@@ -9,11 +9,15 @@ body {
 }
 
 $background-main-color: rgb(240, 80, 80);
+$rosado-claro: rgb(250, 180, 180);
 $yellow-brand: #fbb800;
 $light-orange: #ffa908;
 $yellow-brand-light: #face54;
 $yellow-brand-lighter: #fdd975;
 $celeste-conejo: #2eb3e7;
+$aquamarina-claro: #83ffe0;
+$verde-claro: #a8ffb4;
+$violeta-claro: #f3cdd9;
 $card-shadow: .1rem .1rem .5rem rgb(31, 31, 31);
 $card-shadow2: .1rem .1rem .7rem rgb(31, 31, 31);
 
@@ -95,7 +99,7 @@ main {
         padding: 0;
 
         .section-header {
-            background-color: rgb(250, 180, 180);
+            background-color: $rosado-claro;
         }
 
         .categoria-box {
@@ -206,6 +210,121 @@ main {
             }
         }
     }
+
+    .limpieza-container {
+        background-color: $violeta-claro;
+
+        .limpieza-sub-container {
+            .top-container {
+                justify-content: center;
+
+                .carouselLimpieza {
+                    .carousel-inner {
+                        width: 350px;
+                        border-radius: 3px;
+                        box-shadow: $card-shadow2;
+                        
+                        .carousel-item {
+                            .carousel-img {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+
+                .box-description {
+                    margin: 0 30px;
+                    width: 500px;
+                }
+            }
+
+            .bottom-container {
+                width: 100%;
+                align-items: center;
+                justify-content: center;
+
+                .feature-container {
+                    display: flex;
+                    justify-content: center;
+
+                    .feature-col {
+                        width: min-content;
+                        .card-cover {
+                            position: relative;
+                            height: 250px;
+                            width: 250px;
+                            background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: cover;
+                            color: white;
+                            
+                            .feature-title {
+                                text-align: center;
+                                h4 {
+                                    position: relative;
+                                    top: 0px;
+                                    text-shadow: 3px 3px 8px black;
+                                }
+        
+                                .last-title {
+                                    position: relative;
+                                    top: 140px;
+                                }
+                            }
+                        }
+
+                        .feat1 {
+                            background-image: url("/images/limpieza/cepillos.webp");
+                        }
+                        .feat2 {
+                            background-image: url("/images/limpieza/shampoo.webp");
+                            color: rgb(255, 255, 255);
+
+                            .feature-title {    
+                                h4 {
+                                    text-shadow: 2px 2px 10px rgb(29, 29, 29);
+                                    background-color: rgba(0, 0, 0, 0.397);
+                                    border-radius: 3px;
+                                }
+                            }
+                        }
+                        .feat3 {
+                            background-image: url("/images/limpieza/arenero1.jpg");
+                        }
+                        .feat4 {
+                            background-image: url("/images/limpieza/palas-gato.webp");
+                            .feature-title {
+                                .last-title {
+                                    top: 130px;
+                                }
+                            }
+                        }
+                        .feat5 {
+                            background-image: url("/images/limpieza/repelente.webp");
+                        }
+                        .feat6 {
+                            background-image: url("/images/limpieza/panales-mascotas.jpg");
+                        }
+                        .feat7 {
+                            background-image: url("/images/limpieza/bolsas-eco-friendly.webp");
+                            .feature-title {
+                                .last-title {
+                                    top: 120px;
+
+                                }
+                                h4 {
+                                    text-shadow: 2px 2px 5px rgb(29, 29, 29);
+                                }
+                            }
+                        }
+                    }
+                }
+
+
+                
+            }
+        }
+    }
 }
 
 footer {
@@ -282,6 +401,23 @@ footer {
 
                     .box-description {
                         width: 80vw;
+                    }
+                }
+            }
+        }
+
+        .limpieza-container {
+            .limpieza-sub-container {
+                .top-container {
+                    .carouselLimpieza {
+                        .carousel-inner {
+                            width: 85vw;
+                        }
+                    }
+
+                    .box-description {
+                        margin: 0 15px;
+                        width: 100%;
                     }
                 }
             }
